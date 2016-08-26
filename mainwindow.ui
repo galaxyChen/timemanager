@@ -6,12 +6,33 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>708</width>
-    <height>627</height>
+    <width>720</width>
+    <height>620</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>720</width>
+    <height>620</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>720</width>
+    <height>620</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>doit.now</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QWidget" name="verticalLayoutWidget">
@@ -19,7 +40,7 @@
      <rect>
       <x>0</x>
       <y>10</y>
-      <width>691</width>
+      <width>722</width>
       <height>561</height>
      </rect>
     </property>
@@ -28,9 +49,18 @@
       <widget class="QLabel" name="title">
        <property name="minimumSize">
         <size>
-         <width>0</width>
+         <width>720</width>
          <height>30</height>
         </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>720</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(17,98, 160);</string>
        </property>
        <property name="text">
         <string>   你好！ admin</string>
@@ -46,8 +76,18 @@
            <property name="minimumSize">
             <size>
              <width>0</width>
-             <height>250</height>
+             <height>462</height>
             </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>462</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(242,243,245);
+font: 10pt &quot;微软雅黑&quot;;</string>
            </property>
            <item>
             <property name="text">
@@ -129,19 +169,6 @@
            </item>
            <item>
             <property name="text">
-             <string>备忘</string>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>16</pointsize>
-             </font>
-            </property>
-            <property name="textAlignment">
-             <set>AlignCenter</set>
-            </property>
-           </item>
-           <item>
-            <property name="text">
              <string>分类列表</string>
             </property>
             <property name="font">
@@ -155,58 +182,246 @@
            </item>
           </widget>
          </item>
-         <item>
-          <spacer name="verticalSpacer">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>40</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
         </layout>
        </item>
        <item>
         <widget class="QStackedWidget" name="stackedWidget">
          <property name="currentIndex">
-          <number>1</number>
+          <number>6</number>
          </property>
-         <widget class="QWidget" name="collect"/>
-         <widget class="QWidget" name="today">
-          <widget class="QTabWidget" name="stateTab">
+         <widget class="QWidget" name="collect">
+          <widget class="QTabWidget" name="stateTab_0">
            <property name="geometry">
             <rect>
              <x>0</x>
-             <y>20</y>
+             <y>10</y>
              <width>411</width>
-             <height>421</height>
+             <height>461</height>
             </rect>
            </property>
            <property name="currentIndex">
             <number>0</number>
            </property>
-           <widget class="QWidget" name="toDo">
+           <widget class="QWidget" name="todo_0">
             <attribute name="title">
              <string>未完成</string>
             </attribute>
-           </widget>
-           <widget class="QWidget" name="toBeDone">
-            <attribute name="title">
-             <string>已完成</string>
-            </attribute>
+            <widget class="QWidget" name="verticalLayoutWidget_2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>391</width>
+               <height>431</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="todolayout_0"/>
+            </widget>
            </widget>
           </widget>
          </widget>
-         <widget class="QWidget" name="tomorrow"/>
-         <widget class="QWidget" name="task"/>
-         <widget class="QWidget" name="date"/>
-         <widget class="QWidget" name="everyday"/>
-         <widget class="QWidget" name="note"/>
-         <widget class="QWidget" name="list"/>
+         <widget class="QWidget" name="today">
+          <widget class="QTabWidget" name="stateTab_1">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>411</width>
+             <height>461</height>
+            </rect>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="toDo_1">
+            <attribute name="title">
+             <string> 未完成</string>
+            </attribute>
+            <widget class="QWidget" name="verticalLayoutWidget_3">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>391</width>
+               <height>431</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="todolayout_1"/>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="done_1">
+            <attribute name="title">
+             <string>已完成</string>
+            </attribute>
+            <widget class="QWidget" name="verticalLayoutWidget_8">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>391</width>
+               <height>431</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="todolayout_7"/>
+            </widget>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tomorrow">
+          <widget class="QTabWidget" name="stateTab_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>411</width>
+             <height>461</height>
+            </rect>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="toDo_2">
+            <attribute name="title">
+             <string>未完成</string>
+            </attribute>
+            <widget class="QWidget" name="verticalLayoutWidget_4">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>391</width>
+               <height>431</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="todolayout_2"/>
+            </widget>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="task">
+          <widget class="QTabWidget" name="stateTab_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>411</width>
+             <height>461</height>
+            </rect>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="toDo_3">
+            <attribute name="title">
+             <string>未完成</string>
+            </attribute>
+            <widget class="QWidget" name="verticalLayoutWidget_5">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>391</width>
+               <height>431</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="todolayout_3"/>
+            </widget>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="date">
+          <widget class="QTabWidget" name="stateTab_4">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>411</width>
+             <height>461</height>
+            </rect>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="toDo_4">
+            <attribute name="title">
+             <string>未完成</string>
+            </attribute>
+            <widget class="QWidget" name="verticalLayoutWidget_6">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>391</width>
+               <height>431</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="todolayout_4"/>
+            </widget>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="everyday">
+          <widget class="QTabWidget" name="stateTab_5">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>411</width>
+             <height>461</height>
+            </rect>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="toDo_5">
+            <attribute name="title">
+             <string>未完成</string>
+            </attribute>
+            <widget class="QWidget" name="verticalLayoutWidget_7">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>391</width>
+               <height>431</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="todolayout_5"/>
+            </widget>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="list">
+          <widget class="QTabWidget" name="stateTab_6">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>10</y>
+             <width>411</width>
+             <height>461</height>
+            </rect>
+           </property>
+           <property name="currentIndex">
+            <number>0</number>
+           </property>
+           <widget class="QWidget" name="toDo_6">
+            <attribute name="title">
+             <string>未完成</string>
+            </attribute>
+            <widget class="QWidget" name="verticalLayoutWidget_9">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>391</width>
+               <height>431</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="todolayout_6"/>
+            </widget>
+           </widget>
+          </widget>
+         </widget>
         </widget>
        </item>
       </layout>
@@ -240,6 +455,149 @@
         </spacer>
        </item>
        <item>
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_12">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_13">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_17">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_18">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_11">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_20">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_16">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_8">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_9">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
         <widget class="QPushButton" name="addButton">
          <property name="minimumSize">
           <size>
@@ -247,18 +605,61 @@
            <height>40</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;微软雅黑&quot;;
+color:rgb(17,98,160);
+border-color: rgb(255, 255, 255);
+selection-color: rgb(255, 255, 255);</string>
+         </property>
          <property name="text">
-          <string> 添加任务</string>
+          <string> +添加任务</string>
          </property>
         </widget>
        </item>
        <item>
-        <spacer name="horizontalSpacer_2">
+        <spacer name="horizontalSpacer_14">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Expanding</enum>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_15">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
@@ -276,6 +677,9 @@
            <height>40</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string notr="true">font: 12pt &quot;微软雅黑&quot;;</string>
+         </property>
          <property name="text">
           <string> 共** 条</string>
          </property>
@@ -288,6 +692,11 @@
            <width>0</width>
            <height>40</height>
           </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;微软雅黑&quot;;
+</string>
          </property>
          <property name="text">
           <string>上一页</string>
@@ -302,10 +711,27 @@
            <height>40</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;微软雅黑&quot;;</string>
+         </property>
          <property name="text">
           <string>下一页</string>
          </property>
         </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_10">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
        </item>
       </layout>
      </item>
@@ -317,7 +743,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>708</width>
+     <width>720</width>
      <height>23</height>
     </rect>
    </property>
